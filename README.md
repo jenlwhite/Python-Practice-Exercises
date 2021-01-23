@@ -14,7 +14,7 @@ print(name + ', you will be 100 years old in the year ' + str(yearforage100) + '
 
 ### Exercise 2
 #### Instructions: Ask the user for a number. Depending on whether the number is even or odd, print out an appropriate message to the user. Hint: how does an even / odd number react differently when divided by 2?
-# Extras: If the number is a multiple of 4, print out a different message. Ask the user for two numbers: one number to check (call it num) and one number to divide by (check). If check divides evenly into num, tell that to the user. If not, print a different appropriate message.
+#### Extras: If the number is a multiple of 4, print out a different message. Ask the user for two numbers: one number to check (call it num) and one number to divide by (check). If check divides evenly into num, tell that to the user. If not, print a different appropriate message.
 
 number = int(input('Choose an integer.'))
 if number%4==0:
