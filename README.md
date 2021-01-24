@@ -30,3 +30,45 @@ if num%check==0:
     print(str(check) + ' is a factor of ' + str(num) + '.')
 else:
     print(str(num) + ' is not a multiple of ' + str(check) + '.')    
+    
+    
+
+### Exercise 3
+#### Instructions: Take a list, say for example this one: a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89] and write a program that prints out all the elements of the list that are less than 5.
+#### Extras: Instead of printing the elements one by one, make a new list that has all the elements less than 5 from this list in it and print out this new list. Write this in one line of Python. Ask the user for a number and return a list that contains only elements from the original list a that are smaller than that number given by the user.
+
+a = [1,1,2,3,5,8,13,21,34,55,89]
+a.sort()
+
+i=0
+while (a[i] < 5):
+        print(a[i])
+        i=i+1
+    
+    
+b = []
+
+i=0
+
+while (a[i] < 5):
+        b.append(a[i])
+        i=i+1
+        
+b
+
+
+maximum = int(input('Provide a maximum value to see all elements less than the stated maximum.'))
+
+c=[]
+
+i=0
+while (a[i]< maximum):
+    c.append(a[i])
+    i=i+1
+    
+c
+
+
+
+### Exercise 4
+#### Instructions:
