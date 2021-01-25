@@ -99,3 +99,9 @@ for number in a and b:
     if (number in a) and (number in b):
         c.append(number)
 c
+
+
+
+### Exercise 6
+#### Instructions: Ask the user for a string and print out whether this string is a palindrome or not. (A palindrome is a string that reads the same forwards and backwards.)
+
