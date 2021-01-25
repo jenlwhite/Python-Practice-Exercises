@@ -105,3 +105,19 @@ c
 ### Exercise 6
 #### Instructions: Ask the user for a string and print out whether this string is a palindrome or not. (A palindrome is a string that reads the same forwards and backwards.)
 
+teststring = str(input('Type a word to see if it is a palindrome.'))
+
+length = len(teststring)
+
+forward = teststring[0:length]
+backward = teststring[length::-1]
+
+if forward == backward:
+    print(teststring + ' is a palindrome.')
+else:
+    print(teststring + ' is not a palindrome.')
+    
+
+
+### Exercise 7
+#### Instructions:
