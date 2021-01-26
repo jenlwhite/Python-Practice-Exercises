@@ -129,4 +129,22 @@ newlist = [number for number in a if number%2 == 0]
 
 
 ### Exercise 8
-#### Instructions:
+#### Instructions: Make a two-player Rock-Paper-Scissors game. (Hint: Ask for player plays (using input), compare them, print out a message of congratulations to the winner, and ask if the players want to start a new game.)
+
+while True:
+   
+    player1 = input('Player 1 Object: ')
+    player2 = input('Player 2 Object: ')
+             
+    if (player1=='rock' and player2=='paper') or (player1=='scissors' and player2=='rock') or (player1=='paper' and player2=='scissors'):
+        print('Player 2 wins.')
+    elif (player1=='paper' and player2=='rock') or (player1=='rock' and player2=='scissors') or (player1=='scissors' and player2=='paper'):
+        print('Player 1 wins.')
+    elif player1==player2:
+        print('Players tied.')
+    else:
+        print('Try again.')
+    x = input('Press Enter to play again. Type Goodbye if not.')
+    if x == 'Goodbye': 
+        print('Thank you for visiting.')
+        break
