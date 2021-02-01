@@ -186,5 +186,17 @@ I am using this repository to save code that I write to practice as I learn Pyth
 
 
 ### Exercise 11
-#### Ask the user for a number and determine whether the number is prime or not. You can (and should!) use your answer to Exercise 4 to help you. Take this opportunity to practice using functions, described below.
+#### Ask the user for a number and determine whether the number is prime or not. You can (and should!) use your answer to Exercise 4 to help you.
 
+    while True:
+
+    usernumber = int(input('Enter an integer to see if it is prime or composite.'))
+    listofdivisors = [number for number in range(2,usernumber-1) if usernumber%number == 0]
+    if len(listofdivisors) != 0:
+        print('The number is composite.')
+    if len(listofdivisors) == 0:
+        print('The number is prime.')
+    x = input('Press Enter to check another integer or type \"exit\".')
+    if x == "exit":
+        print('Thank you for visiting.')
+        break
