@@ -182,3 +182,9 @@ I am using this repository to save code that I write to practice as I learn Pyth
 
     c = [number for number in a and b if number in a and number in b]
     c
+
+
+
+### Exercise 11
+#### Ask the user for a number and determine whether the number is prime or not. You can (and should!) use your answer to Exercise 4 to help you. Take this opportunity to practice using functions, described below.
+
