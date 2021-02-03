@@ -206,3 +206,6 @@ I am using this repository to save code that I write to practice as I learn Pyth
 ### Exercise 12
 #### Instructions: Write a program that takes a list of numbers (for example, a = [5, 10, 15, 20, 25]) and makes a new list of only the first and last elements of the given list. For practice, write this code inside a function.
 
+    def firstandlast (list):
+        newlist = [list[0],list[-1]]
+        return print(newlist)
