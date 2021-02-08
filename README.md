@@ -215,3 +215,20 @@ I am using this repository to save code that I write to practice as I learn Pyth
 ### Exercise 13
 #### Instructions: Write a program that asks the user how many Fibonnaci numbers to generate and then generates them. Take this opportunity to think about how you can use functions. Make sure to ask the user to enter the number of numbers in the sequence to generate.(Hint: The Fibonnaci seqence is a sequence of numbers where the next number in the sequence is the sum of the previous two numbers in the sequence. The sequence looks like this: 1, 1, 2, 3, 5, 8, 13, …)
 
+    def Fibfun():
+    usernum = int(input('How many Fibonnaci numbers would you like to see?'))
+    i=1
+    if usernum == 0:
+        fiblist = []
+    elif usernum == 1:
+        fiblist = [1]
+    elif usernum == 2:
+        fiblist = [1,1]
+    elif usernum > 2:
+        fiblist = [1,1]
+        while i < (usernum-1):
+            fiblist.append(fiblist[i]+fiblist[i-1])
+            i += 1
+    return fiblist
+
+    Fibfun()
