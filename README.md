@@ -240,7 +240,13 @@ I am using this repository to save code that I write to practice as I learn Pyth
 #### Extras: Write two different functions to do this - one using a loop and constructing a list, and another using sets. Go back and do Exercise 5 using sets, and write the solution for that in a different function.
 
     def RemoveDupes(somelist):
-    list2set = set(somelist)
-    return list(list2set)
+        list2set = set(somelist)
+        return list(list2set)
     
     
+    def UniquesOnly(someotherlist):
+        newlist = []
+        for element in someotherlist:
+            if element not in newlist:
+                newlist.append(element)
+        return newlist
