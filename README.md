@@ -255,3 +255,11 @@ I am using this repository to save code that I write to practice as I learn Pyth
 
 ### Exercise 15
 #### Instructions: Write a program (using functions!) that asks the user for a long string containing multiple words. Print back to the user the same string, except with the words in backwards order. For example, say I type the string: 'My name is Michele'. Then I would see the string: 'Michele is name My' shown back to me.
+
+    userinput = str(input('Type a phrase or sentence to see it printed in reverse.'))
+
+    def backwardphrase(userinput):
+        split_userinput = userinput.split()
+        return " ".join(split_userinput[::-1])
+
+    backwardphrase(userinput)
