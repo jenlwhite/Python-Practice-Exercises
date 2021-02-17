@@ -281,3 +281,7 @@ I am using this repository to save code that I write to practice as I learn Pyth
     length = int(input('How many characters would you like in the password?'))
     userpassword = "".join(random.sample(all_characters,length))
     print(userpassword)
+
+### Exercise 17
+#### Instructions: Use the BeautifulSoup and requests Python packages to print out a list of all the article titles on the New York Times homepage.
+
